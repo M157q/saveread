@@ -1,7 +1,11 @@
 # SaveRead  
   
-A standalone application in order to replace [pocket](http://getpocket.io).  
-Save, Search, Add tags and Read webpage urls.  
+*This project is WIP*  
+  
+Save what you've read.  
+  
+Save webpage url, title and text content in SQLite3 database.  
+You can add tags for saved webpage for searching in the future.  
   
 ---  
   
