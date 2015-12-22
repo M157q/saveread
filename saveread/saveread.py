@@ -14,14 +14,15 @@ def parse_args():
 
 
 def execute_saveread(args):
-    from saveread import database
+    from . import database
     db = database.SavereadDB()
+
     if args.web:
-        from saveread import web_mode
-        web_mode.main(db)
+        from . import web_mode
+        web_mode.main(db.records)
     else:
-        from saveread import cli_mode
-        cli_mode.main(db)
+        from . import cli_mode
+        cli_mode.main(db.records)
 
 
 def main():
